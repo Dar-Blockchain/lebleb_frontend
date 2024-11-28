@@ -4,6 +4,8 @@ export default function Document() {
   return (
     <Html lang="en">
  <Head>
+ <title>Lebleb Protocol</title>
+
  <link rel="icon" href="/favicon.ico" />
  </Head>  
         <body>
