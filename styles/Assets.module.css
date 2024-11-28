@@ -1,0 +1,225 @@
+/* Container for both cards */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    gap: 20px;
+}
+
+/* Card style for supply and borrow sections */
+.card {
+    flex: 1;
+    background-color: #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    padding: 20px;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.02);
+}
+
+/* Section titles */
+.card h3 {
+    margin: 0;
+    font-size: 1.5em;
+    color: #333333;
+    border-bottom: 2px solid #f0f0f0;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+/* Table styles */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9em;
+}
+
+.table th, .table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.table th {
+    color: #666666;
+    font-weight: 600;
+}
+
+/* Asset row with logo and symbol */
+.assetRow {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+/* Buttons */
+.buttonGroup {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.supplyButton, .borrowButton, .detailsButton {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    font-size: 0.9em;
+}
+
+.supplyButton {
+    background-color: #4caf50;
+    color: #ffffff;
+}
+
+.supplyButton:hover {
+    background-color: #45a049;
+}
+
+.borrowButton {
+    background-color: #2196f3;
+    color: #ffffff;
+}
+
+.borrowButton:hover {
+    background-color: #1e88e5;
+}
+
+.detailsButton {
+    background-color: #f0f0f0;
+    color: #666666;
+}
+
+.detailsButton:hover {
+    background-color: #e0e0e0;
+}
+
+/* Modal overlay and content */
+/* Modal overlay and content */
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6); /* Dark semi-transparent overlay */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.modal {
+    position: relative;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 500px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    text-align: left;
+    animation: slideIn 0.3s ease;
+}
+
+@keyframes slideIn {
+    from { transform: translateY(-50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+/* Close button */
+.closeButton {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: none;
+    border: none;
+    font-size: 1.5em;
+    color: #888;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.closeButton:hover {
+    color: #333;
+}
+
+/* Modal content styles */
+.modal h2 {
+    margin-top: 0;
+    color: #333333;
+    font-size: 1.5em;
+    border-bottom: 2px solid #f0f0f0;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.modal p {
+    font-size: 1em;
+    color: #666666;
+    margin: 10px 0;
+}
+
+/* Input styles for amount */
+.input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    margin-top: 10px;
+    font-size: 1em;
+}
+
+/* Button styles */
+.buttonGroup {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.approveButton, .confirmButton {
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.approveButton {
+    background-color: #ff9800;
+    color: #ffffff;
+}
+
+.approveButton:hover {
+    background-color: #fb8c00;
+}
+
+.confirmButton {
+    background-color: #4caf50;
+    color: #ffffff;
+}
+
+.confirmButton:hover {
+    background-color: #43a047;
+}
+
+/* Rewards Column */
+.table th:last-child, .table td:last-child {
+    text-align: right;
+}

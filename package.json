@@ -1,0 +1,20 @@
+{
+  "name": "lebleb",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@massalabs/massa-web3": "^4.0.2-dev",
+    "@massalabs/wallet-provider": "^2.0.1-dev",
+    "@reduxjs/toolkit": "^2.2.5",
+    "next": "15.0.2",
+    "react": "19.0.0-rc-02c0e824-20241028",
+    "react-dom": "19.0.0-rc-02c0e824-20241028",
+    "react-redux": "^9.1.2"
+  }
+}
