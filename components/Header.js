@@ -21,7 +21,7 @@ const Header = () => {
   console.log(provider);
   return (
     <header className={styles.header}>
-      <h2 className={styles.title}>Admin Panel</h2>
+      <img src="lebleb-logo.png" style={{width: '130px'}} alt="Lebleb Logo"></img>
       <div>
         {connected ? (
           <div className={styles.connectedContainer}>
