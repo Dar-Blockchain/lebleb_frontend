@@ -8,15 +8,15 @@ import { fetchBalance } from '@/store/balanceSlice';
 import { fetchDebt } from '@/store/debtSlice';
 
 const assetsSupply = [
-    { symbol: 'WMASS', balance: '1,500', apy: '3.50%', logo: '/massa_logo.png', collateral: true, asset: "AS12FW5Rs5YN2zdpEnqwj4iHUUPt9R4Eqjq2qtpJFNKW3mn33RuLU",reserve:"AS1R4NLYojKdWu1FJXxkjXjQ7NsgDUYzZ15DfSe8AHmYhzvqC24L" },
-    { symbol: 'USDT', balance: '2,000', apy: '1.75%', logo: '/tether-usdt-logo.png', collateral: true, asset: "" },
+    { symbol: 'WMASS', balance: '1,500', apy: '3.50%', logo: '/massa_logo.png', collateral: true, asset: "AS12FW5Rs5YN2zdpEnqwj4iHUUPt9R4Eqjq2qtpJFNKW3mn33RuLU",reserve:"AS1Q7HyLQ5tas39szGxmCu8xDXdhWMdzX3brRUzm8BgndQq6Ss8b" },
+    { symbol: 'USDT', balance: '2,000', apy: '1.75%', logo: '/tether-usdt-logo.png', collateral: true, asset: "AS12ix1Qfpue7BB8q6mWVtjNdNE9UV3x4MaUo7WhdUubov8sJ3CuP" ,reserve:"AS12cayGuPbh7gP6S2S48Q6UgJnpqxsKw37Z8hqQ8DHyUc5wV6ZbS"},
     { symbol: 'USDC', balance: '1,800', apy: '2.00%', logo: '/usd-coin-usdc-logo.png', collateral: true, asset: "" },
     { symbol: 'ETH', balance: '0.5000', apy: '4.00%', logo: '/ethereum-eth-logo.png', collateral: true, asset: "" },
 ];
 
 const assetsBorrow = [
-    { symbol: 'WMASS', apy: '2.50%', logo: '/massa_logo.png', available: 1_000, asset: "AS12FW5Rs5YN2zdpEnqwj4iHUUPt9R4Eqjq2qtpJFNKW3mn33RuLU",reserve:"AS1R4NLYojKdWu1FJXxkjXjQ7NsgDUYzZ15DfSe8AHmYhzvqC24L" },
-    { symbol: 'USDT', apy: '1.25%', logo: '/tether-usdt-logo.png', available: 1_500, asset: "" },
+    { symbol: 'WMASS', apy: '2.50%', logo: '/massa_logo.png', available: 1_000, asset: "AS12FW5Rs5YN2zdpEnqwj4iHUUPt9R4Eqjq2qtpJFNKW3mn33RuLU",reserve:"AS1Q7HyLQ5tas39szGxmCu8xDXdhWMdzX3brRUzm8BgndQq6Ss8b" },
+    { symbol: 'USDT', apy: '1.25%', logo: '/tether-usdt-logo.png', available: 1_500, asset: "AS12ix1Qfpue7BB8q6mWVtjNdNE9UV3x4MaUo7WhdUubov8sJ3CuP",reserve:"AS12cayGuPbh7gP6S2S48Q6UgJnpqxsKw37Z8hqQ8DHyUc5wV6ZbS" },
     { symbol: 'USDC', apy: '2.75%', logo: '/usd-coin-usdc-logo.png', available: 1_200, asset: "" },
     { symbol: 'ETH', apy: '3.10%', logo: '/ethereum-eth-logo.png', available: 0.2500, asset: "" },
 ];
